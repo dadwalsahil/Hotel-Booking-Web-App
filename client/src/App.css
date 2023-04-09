@@ -1,0 +1,60 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+  background: rgb(212,255,224);
+background: linear-gradient(103deg, rgba(212,255,224,1) 0%, rgba(184,254,163,0.6419817927170868) 38%, rgba(220,231,145,0.6783963585434174) 55%, rgba(231,229,111,0.31985294117647056) 100%);
+
+}
+
+ul{
+    list-style-type: none;
+}
+
+p{
+    margin: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* Scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.Toastify__toast-container{
+  z-index: 99999999 !important;
+}
