@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import "./menu.css";
 import FadeIn from "react-fade-in";
@@ -53,13 +53,6 @@ const ListItems = styled.ul`
 const MainMenu = () => {
   const { menuOpen, setMenuOpen } = useContext(GlobalContext);
   const user = JSON.parse(localStorage.getItem("user"));
-  useEffect(() => {
-    if (menuOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "visible";
-    }
-  }, [menuOpen]);
 
   let menuOptions = [
     {
